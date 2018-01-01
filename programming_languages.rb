@@ -5,6 +5,7 @@ def reformat_languages(languages)
   languages.each do |style, languages|
     languages.each do |language, type|
       unless new_hash.keys.include?(language)
+        binding.pry
         new_hash[language][:style] = []
       end
         new_hash[language][:style] << style
